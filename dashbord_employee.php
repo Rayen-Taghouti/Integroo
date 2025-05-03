@@ -191,7 +191,9 @@ if (isset($_SESSION['user_id'])) {
                     <div class="chat_box" id="chat_box"></div>
                     <form action="#">
                         <div class="form_groupe">
-                            <input type="text" placeholder="Taper...">
+                            <input type="hidden" id="sender-id" value="1">
+                            <input type="hidden" id="receiver-id" value="2">
+                            <input type="text" id="chat-input" placeholder="Taper...">
                             <button type="submit" class="btn_send"><i class='bx bx-send'></i></button>
                         </div>
                     </form>
